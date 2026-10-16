@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOLN V — Haute Parfumerie | Gulf Region</title>
+  <meta name="description" content="Discover MOLN V: Distinctive, accessible luxury fragrances created for discerning connoisseurs across Saudi Arabia, UAE, and the Gulf region.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="MOLN V — Haute Parfumerie">
+  <meta property="og:description" content="Distinctive, refined perfumes that stand apart from generic scents. Mobile-first luxury shopping across the GCC.">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts Preconnect & Luxury Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Immediate pre-render check to prevent splash re-triggering during navigation -->
+  <script>
+    window.__splashStartTime = performance.now();
+    if (sessionStorage.getItem('moln_splash_shown') === 'true' || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+      document.documentElement.classList.add('no-splash');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Initial Visit Luxury Opening Experience (MOLN V — Celestial Orbit) -->
+  <div id="moln-splash-screen" role="dialog" aria-modal="true" aria-label="Celestial Opening Experience">
+    <div class="moln-celestial-stage">
+      
+      <!-- Outer Orbit (3) with Two Evenly Spaced Moons (180° apart) -->
+      <div class="moln-orbit moln-orbit-outer">
+        <div class="moln-orbit-moon moln-moon-3a moon-pos-top">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+        <div class="moln-orbit-moon moln-moon-3b moon-pos-bottom">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Middle Orbit (2) with Two Evenly Spaced Moons (180° apart) -->
+      <div class="moln-orbit moln-orbit-mid">
+        <div class="moln-orbit-moon moln-moon-2a moon-pos-top">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+        <div class="moln-orbit-moon moln-moon-2b moon-pos-bottom">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Inner Orbit (1) with Two Evenly Spaced Moons (180° apart) -->
+      <div class="moln-orbit moln-orbit-inner">
+        <div class="moln-orbit-moon moln-moon-1a moon-pos-top">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+        <div class="moln-orbit-moon moln-moon-1b moon-pos-bottom">
+          <svg viewBox="0 0 24 24" class="moon-svg" aria-hidden="true">
+            <path d="M14 3.5C8.8 4.6 5 9.4 5 15s3.8 10.4 9 11.5c-4.8-2-7.2-6.5-7.2-11.5S9.2 5.5 14 3.5z" fill="#F7F2E8"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Central "V" Symbol using the exact supplied logo design -->
+      <div class="moln-v-emblem">
+        <img src="assets/images/v-symbol.png" alt="Brand V Symbol" class="moln-v-img">
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/js/splash.js"></script>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="bar-content">
+      <span class="pulse-dot"></span>
+      <span id="announcement-text-display">Complimentary express delivery across the GCC on orders over 500 SAR • Try at home with the Discovery Wardrobe</span>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo-link">
+        <img src="assets/images/logo.jpg" alt="MOLN V Logo" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-title">MOLN V</span>
+          <span class="brand-subtitle">Haute Parfumerie</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Fragrances</a>
+        <a href="discovery.html" class="nav-link">Scent Finder <span class="nav-badge-pill">Quiz</span></a>
+        <a href="about.html" class="nav-link">The House</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Concierge</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        
+        <!-- GCC Currency Selector -->
+        <div class="currency-select-wrapper">
+          <select class="currency-select" aria-label="Select Currency">
+            <option value="SAR">SAR (ر.س)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="KWD">KWD (د.ك)</option>
+            <option value="QAR">QAR (ر.ق)</option>
+            <option value="BHD">BHD (د.ب)</option>
+            <option value="OMR">OMR (ر.ع)</option>
+            <option value="USD">USD ($)</option>
+          </select>
+        </div>
+
+        <!-- Search Icon -->
+        <a href="search.html" class="action-btn" aria-label="Search Fragrances">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+
+        <!-- Customer Account -->
+        <a href="account.html" class="action-btn" aria-label="Customer Account">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Wishlist -->
+        <a href="account.html#wishlist" class="action-btn" aria-label="Wishlist">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count wishlist-count-badge" style="display: none;">0</span>
+        </a>
+
+        <!-- Cart Drawer Trigger -->
+        <button class="action-btn cart-open-btn" aria-label="View Shopping Bag">
+          <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="action-btn menu-toggle-btn" aria-label="Toggle Mobile Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <img src="assets/images/logo.jpg" alt="MOLN V" style="width: 36px; height: 36px; border-radius: 4px;">
+          <span style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: #fff;">MOLN V</span>
+        </div>
+        <button class="close-mobile-nav-btn" style="background: none; border: none; font-size: 1.6rem; color: var(--color-powder-blue);">&times;</button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+        <a href="shop.html" class="mobile-nav-link">All Fragrances <span>→</span></a>
+        <a href="discovery.html" class="mobile-nav-link">Find Your Fragrance <span class="nav-badge-pill">Quiz</span></a>
+        <a href="about.html" class="mobile-nav-link">The House of MOLN V <span>→</span></a>
+        <a href="account.html" class="mobile-nav-link">My Account & Orders <span>→</span></a>
+        <a href="faq.html" class="mobile-nav-link">FAQ & GCC Shipping <span>→</span></a>
+        <a href="contact.html" class="mobile-nav-link">Concierge & Contact <span>→</span></a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <div class="currency-select-wrapper" style="width: 100%;">
+          <select class="currency-select form-control" style="width: 100%;">
+            <option value="SAR">SAR (Saudi Riyal)</option>
+            <option value="AED">AED (UAE Dirham)</option>
+            <option value="KWD">KWD (Kuwaiti Dinar)</option>
+            <option value="QAR">QAR (Qatari Riyal)</option>
+            <option value="BHD">BHD (Bahraini Dinar)</option>
+            <option value="OMR">OMR (Omani Rial)</option>
+            <option value="USD">USD (US Dollar)</option>
+          </select>
+        </div>
+        <a href="admin.html" class="btn btn-secondary btn-sm btn-block" style="font-size: 0.75rem;">Brand Admin Console</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">Shopping Bag (<span class="cart-count-badge">0</span>)</div>
+        <button class="close-drawer-btn">&times;</button>
+      </div>
+
+      <div class="free-shipping-progress">
+        <div class="free-shipping-text" style="font-size: 0.76rem; color: var(--color-powder-blue);">
+          Complimentary shipping on orders over 500 SAR
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill free-shipping-fill"></div>
+        </div>
+      </div>
+
+      <div class="cart-drawer-items">
+        <!-- Rendered dynamically by store.js / main.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-drawer-subtotal">0.00 SAR</span>
+        </div>
+        
+        <div class="tabby-tamara-pill drawer-tabby-calc">
+          Or 4 interest-free payments with Tabby / Tamara
+        </div>
+
+        <a href="checkout.html" class="btn btn-primary btn-block">Secure Checkout</a>
+        <a href="cart.html" class="btn btn-secondary btn-block btn-sm">View Full Bag</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <span class="section-eyebrow">Haute Parfumerie • Gulf Edition</span>
+            <h1 class="hero-headline">
+              Distinctive Luxury.<br>
+              <span style="color: var(--color-powder-blue);">Beyond The Ordinary.</span>
+            </h1>
+            <p class="hero-description">
+              MOLN V crafts memorable, distinctive fragrances formulated to stand apart from predictable, widely available scents. Discover a refined balance of icy clarity and sovereign warmth.
+            </p>
+            
+            <div class="hero-cta-group">
+              <a href="shop.html" class="btn btn-primary btn-lg">Explore Collection</a>
+              <a href="discovery.html" class="btn btn-secondary btn-lg">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+                Find Your Scent
+              </a>
+            </div>
+
+            <!-- Trust Micro-Badges -->
+            <div style="display: flex; gap: 1.5rem; margin-top: 2.5rem; font-size: 0.78rem; color: var(--color-slate-400); flex-wrap: wrap;">
+              <span style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="15" height="15" fill="none" stroke="var(--color-sapphire)" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                High Concentration Extraits
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="15" height="15" fill="none" stroke="var(--color-sapphire)" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                GCC Express Air Delivery
+              </span>
+              <span style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="15" height="15" fill="none" stroke="var(--color-sapphire)" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Split in 4 with Tabby / Tamara
+              </span>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img src="assets/images/hero-perfume-editorial.svg" alt="MOLN V Fragrance Flacon" class="hero-img">
+            <div class="hero-badge-floating">
+              <div style="font-weight: 700; color: #fff;">EDITION I — SAPPHIRE NOIR</div>
+              <div style="color: var(--color-powder-blue); font-size: 0.72rem;">Available across GCC • 100ml Extrait</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Pillars Bar -->
+    <section class="trust-pillars-bar">
+      <div class="container">
+        <div class="pillars-grid">
+          
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="pillar-title">Distinctive Formulations</div>
+              <div class="pillar-desc">Created specifically to avoid generic, mass-market fragrance profiles.</div>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="pillar-title">Try-At-Home Wardrobe</div>
+              <div class="pillar-desc">Test all 5 editions in 10ml atomizers before committing to a full flacon.</div>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="pillar-title">GCC Express Dispatch</div>
+              <div class="pillar-desc">Direct temperature-controlled delivery to Saudi Arabia, UAE & GCC.</div>
+            </div>
+          </div>
+
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="pillar-title">Mada & Flexible BNPL</div>
+              <div class="pillar-desc">Mada, Apple Pay, Tabby & Tamara interest-free installments supported.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Fragrances Section -->
+    <section class="section-padding" style="padding: 6rem 0;">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span class="section-eyebrow">The Atelier Selection</span>
+          <h2 class="section-title">Signature Fragrance Editions</h2>
+          <p class="section-subtitle">
+            Each creation is an olfactory dialogue of contrast and refinement, conceived for long-lasting presence and subtle individuality.
+          </p>
+        </div>
+
+        <div class="products-grid" id="homepage-featured-grid">
+          <!-- Dynamically populated from store.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="shop.html" class="btn btn-secondary btn-lg">View Complete Fragrance Catalog →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- "Find Your Fragrance" Discovery Section -->
+    <section class="discovery-section">
+      <div class="container">
+        
+        <div style="text-align: center;">
+          <span class="section-eyebrow">The Olfactory Profiler</span>
+          <h2 class="section-title">Find Your Distinctive Scent</h2>
+          <p class="section-subtitle">
+            Uncertain about choosing a fragrance online without smelling it? Answer three guided questions to uncover the exact MOLN V creation aligned with your character and occasion.
+          </p>
+        </div>
+
+        <div class="discovery-card-wrapper discovery-quiz-container">
+          
+          <!-- Step 1 -->
+          <div class="quiz-step active" data-step="1">
+            <div class="quiz-question-title">What olfactory character best resonates with you?</div>
+            <div class="quiz-question-sub">Select the core mood that defines your ideal presence</div>
+            
+            <div class="quiz-options-grid">
+              <div class="quiz-option-card" data-value="woody">
+                <div class="quiz-opt-title">Sapphire Noir • Enigmatic Woods</div>
+                <div class="quiz-opt-desc">Crisp juniper, Florentine iris, cedarwood and deep smoked incense.</div>
+              </div>
+              <div class="quiz-option-card" data-value="amber">
+                <div class="quiz-opt-title">Nordic Amber • Luminous Warmth</div>
+                <div class="quiz-opt-desc">Radiant cardamom, ambergris, bourbon vanilla, and golden sandalwood.</div>
+              </div>
+              <div class="quiz-option-card" data-value="fresh">
+                <div class="quiz-opt-title">Frosted Cedar • Glacial Clarity</div>
+                <div class="quiz-opt-desc">Icy mint, sparkling citrus, clean ocean salt, and fresh cedarwood.</div>
+              </div>
+              <div class="quiz-option-card" data-value="oud">
+                <div class="quiz-opt-title">Sovereign Oud • Noble Heritage</div>
+                <div class="quiz-opt-desc">Wild Cambodian agarwood, Taif rose petals, and hand-buffed leather.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" data-step="2">
+            <div class="quiz-question-title">Where will you primarily wear your signature scent?</div>
+            <div class="quiz-question-sub">Different concentrations and accords excel across different environments</div>
+            
+            <div class="quiz-options-grid">
+              <div class="quiz-option-card" data-value="office">
+                <div class="quiz-opt-title">Daytime Professional & Executive</div>
+                <div class="quiz-opt-desc">Clean, refined projection tailored for meetings and climate-controlled spaces.</div>
+              </div>
+              <div class="quiz-option-card" data-value="intimate">
+                <div class="quiz-opt-title">Evenings & Intimate Gatherings</div>
+                <div class="quiz-opt-desc">Warm, magnetic accords that draw people closer without overpowering.</div>
+              </div>
+              <div class="quiz-option-card" data-value="formal">
+                <div class="quiz-opt-title">Majlis, Weddings & Grand Occasions</div>
+                <div class="quiz-opt-desc">Profound presence, rich sillage, and enduring luxury trail.</div>
+              </div>
+              <div class="quiz-option-card" data-value="signature">
+                <div class="quiz-opt-title">Everyday Versatile Signature</div>
+                <div class="quiz-opt-desc">A seamless signature that transitions naturally from morning to evening.</div>
+              </div>
+            </div>
+
+            <div class="quiz-nav-row">
+              <button class="btn btn-secondary btn-sm quiz-prev-btn">← Back</button>
+              <span class="quiz-step-indicator" style="font-size: 0.8rem; color: var(--color-powder-blue);">Question 2 of 3</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step" data-step="3">
+            <div class="quiz-question-title">What projection (sillage) do you command?</div>
+            <div class="quiz-question-sub">How noticeable should your fragrance trail be to others?</div>
+            
+            <div class="quiz-options-grid">
+              <div class="quiz-option-card" data-value="discreet">
+                <div class="quiz-opt-title">Intimate & Restrained</div>
+                <div class="quiz-opt-desc">An aura discovered by those in close proximity; never intrusive.</div>
+              </div>
+              <div class="quiz-option-card" data-value="confident">
+                <div class="quiz-opt-title">Noticeable & Memorable (Arm's Length)</div>
+                <div class="quiz-opt-desc">Leaves an elegant, memorable trail as you move through the room.</div>
+              </div>
+              <div class="quiz-option-card" data-value="imperial">
+                <div class="quiz-opt-title">Imperial & Sovereign (12+ Hours)</div>
+                <div class="quiz-opt-desc">Maximum concentration and unmistakable room-filling presence.</div>
+              </div>
+              <div class="quiz-option-card" data-value="sample">
+                <div class="quiz-opt-title">I Want To Experience All Accords At Home</div>
+                <div class="quiz-opt-desc">Guide me to the 5-edition Discovery Wardrobe coffret.</div>
+              </div>
+            </div>
+
+            <div class="quiz-nav-row">
+              <button class="btn btn-secondary btn-sm quiz-prev-btn">← Back</button>
+              <span class="quiz-step-indicator" style="font-size: 0.8rem; color: var(--color-powder-blue);">Question 3 of 3</span>
+            </div>
+          </div>
+
+          <!-- Result Container -->
+          <div class="quiz-result-container"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Overcoming Online Fragrance Hesitation: The Discovery Wardrobe Spotlight -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="trust-split-grid">
+          
+          <div>
+            <span class="section-eyebrow">The Online Fragrance Dilemma Solved</span>
+            <h2 class="section-title">Hesitant To Buy Perfume Online Without Smelling It?</h2>
+            <p style="color: var(--color-ice-blue); font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              Buying perfume online has traditionally required guesswork. At MOLN V, we designed our customer experience around total transparency, detailed olfactory notes, and our signature <strong>Discovery Wardrobe</strong>.
+            </p>
+
+            <div class="trust-feature-list">
+              <div class="trust-feature-item">
+                <span class="trust-num">01</span>
+                <div>
+                  <div class="trust-feature-title">Five Full 10ml Travel Atomizers</div>
+                  <div class="trust-feature-p">Experience Editions I, II, III, IV, and V on your own skin across several weeks before choosing a full 100ml flacon.</div>
+                </div>
+              </div>
+
+              <div class="trust-feature-item">
+                <span class="trust-num">02</span>
+                <div>
+                  <div class="trust-feature-title">100 SAR Full-Bottle Credit Voucher</div>
+                  <div class="trust-feature-p">Every Discovery Wardrobe comes with an exclusive voucher deducting 100 SAR from your next 100ml flacon order.</div>
+                </div>
+              </div>
+
+              <div class="trust-feature-item">
+                <span class="trust-num">03</span>
+                <div>
+                  <div class="trust-feature-title">Transparent Olfactory Pyramids</div>
+                  <div class="trust-feature-p">No ambiguous poetic jargon. Every fragrance detail lists precise Top, Heart, and Base notes with wear-time benchmarks.</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2.5rem;">
+              <a href="product.html?id=moln-v-discovery" class="btn btn-primary btn-lg">Order Discovery Wardrobe • 210 SAR</a>
+            </div>
+          </div>
+
+          <div style="position: relative;">
+            <img src="assets/images/perfumes/moln-v-discovery.svg" alt="MOLN V Discovery Set" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--color-border);">
+            <div style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0, 9, 38, 0.9); backdrop-filter: blur(8px); padding: 1rem 1.25rem; border-radius: 6px; border: 1px solid var(--color-border); font-size: 0.8rem;">
+              <span style="color: var(--color-powder-blue); font-weight: 700;">Zero-Risk Scent Discovery:</span> Experience on your skin in your environment.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Genuine Customer Feedback (Clearly Marked Placeholders) -->
+    <section class="reviews-section">
+      <div class="container">
+        
+        <div style="text-align: center;">
+          <span class="section-eyebrow">Client Perspectives</span>
+          <h2 class="section-title">Refined Impressions</h2>
+          <p class="section-subtitle">
+            [Notice to Brand Owner: Customer review placeholders below are ready to be updated with genuine verified buyer testimonials.]
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">
+              "[Verified Customer Review Placeholder] — Edition I has become my non-negotiable evening signature in Riyadh. The contrast of the juniper top note with the smoky amber base is unlike anything available in commercial perfume stores."
+            </div>
+            <div class="reviewer-meta">
+              <div>
+                <div class="reviewer-name">Abdulrahman K. [Placeholder]</div>
+                <div class="reviewer-loc">Riyadh, Saudi Arabia</div>
+              </div>
+              <span class="verified-pill">✓ Verified Purchase</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">
+              "[Verified Customer Review Placeholder] — Ordering the Discovery Set first was the best decision. I was able to test all five editions over two weeks. Ended up purchasing full bottles of Edition II and Edition IV."
+            </div>
+            <div class="reviewer-meta">
+              <div>
+                <div class="reviewer-name">Maryam S. [Placeholder]</div>
+                <div class="reviewer-loc">Dubai, United Arab Emirates</div>
+              </div>
+              <span class="verified-pill">✓ Verified Purchase</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <div class="review-text">
+              "[Verified Customer Review Placeholder] — Delivery took just two days to Kuwait City. The presentation box, heavyweight bottle cap, and sillage are on par with private collection niche houses."
+            </div>
+            <div class="reviewer-meta">
+              <div>
+                <div class="reviewer-name">Hamad A. [Placeholder]</div>
+                <div class="reviewer-loc">Kuwait City, Kuwait</div>
+              </div>
+              <span class="verified-pill">✓ Verified Purchase</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIP Newsletter Section -->
+    <section class="vip-section">
+      <div class="container">
+        <span class="section-eyebrow">Private Circle</span>
+        <h2 class="section-title">Join The MOLN V Atelier</h2>
+        <p class="section-subtitle">
+          Receive priority invitations to limited edition fragrance releases, private collector events, and private discovery allocations.
+        </p>
+
+        <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Thank you for joining the MOLN V Atelier VIP Circle.', '✦'); this.reset();">
+          <input type="email" required placeholder="Enter your email address" class="newsletter-input" aria-label="Email address for VIP newsletter">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p style="font-size: 0.72rem; color: var(--color-slate-500); margin-top: 1rem;">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="assets/images/logo.jpg" alt="MOLN V" style="width: 40px; height: 40px; border-radius: 4px;">
+            <span style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff;">MOLN V</span>
+          </div>
+          <p style="font-size: 0.85rem; line-height: 1.7; color: var(--color-slate-400); margin-bottom: 1.5rem;">
+            A premium fragrance house creating distinctive, refined perfumes that stand apart from generic scents. Accessible luxury crafted with an architectural aesthetic for the Gulf region.
+          </p>
+          <div style="font-size: 0.78rem; color: var(--color-powder-blue);">
+            Concierge WhatsApp: <a href="https://wa.me/201122983570" target="_blank" style="text-decoration: underline;">01122983570</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Fragrance House</div>
+          <div class="footer-links-list">
+            <a href="shop.html" class="footer-link">All Fragrances</a>
+            <a href="discovery.html" class="footer-link">Scent Finder Quiz</a>
+            <a href="product.html?id=moln-v-discovery" class="footer-link">The Discovery Wardrobe</a>
+            <a href="about.html" class="footer-link">The House & Philosophy</a>
+            <a href="admin.html" class="footer-link" style="color: var(--color-powder-blue); font-weight: 600;">Brand Admin Portal ⚙</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Customer Care</div>
+          <div class="footer-links-list">
+            <a href="contact.html" class="footer-link">Concierge & Inquiries</a>
+            <a href="faq.html" class="footer-link">Frequently Asked Questions</a>
+            <a href="account.html" class="footer-link">Order Status & Tracking</a>
+            <a href="shipping-policy.html" class="footer-link">Shipping & Delivery [Draft]</a>
+            <a href="refund-policy.html" class="footer-link">Returns Policy [Draft]</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Regional Shipping</div>
+          <p style="font-size: 0.82rem; line-height: 1.6; color: var(--color-slate-400); margin-bottom: 1rem;">
+            Complimentary temperature-controlled express delivery across:
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.72rem;">
+            <span class="badge badge-info">Saudi Arabia (KSA)</span>
+            <span class="badge badge-info">UAE</span>
+            <span class="badge badge-info">Kuwait</span>
+            <span class="badge badge-info">Qatar</span>
+            <span class="badge badge-info">Bahrain</span>
+            <span class="badge badge-info">Oman</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div style="font-size: 0.78rem;">
+          &copy; 2026 MOLN V Haute Parfumerie. All rights reserved. 
+          <span style="margin: 0 0.5rem;">•</span>
+          <a href="privacy-policy.html" style="text-decoration: underline;">Privacy Policy</a>
+          <span style="margin: 0 0.5rem;">•</span>
+          <a href="terms.html" style="text-decoration: underline;">Terms & Conditions</a>
+        </div>
+
+        <!-- GCC Payment Gateways Icons -->
+        <div class="payment-badges-row">
+          <img src="assets/images/icons/mada.svg" alt="Mada Debit" class="payment-badge-img">
+          <img src="assets/images/icons/apple-pay.svg" alt="Apple Pay" class="payment-badge-img">
+          <img src="assets/images/icons/tabby.svg" alt="Tabby Buy Now Pay Later" class="payment-badge-img">
+          <img src="assets/images/icons/tamara.svg" alt="Tamara Buy Now Pay Later" class="payment-badge-img">
+          <img src="assets/images/icons/visa.svg" alt="Visa" class="payment-badge-img">
+          <img src="assets/images/icons/mastercard.svg" alt="Mastercard" class="payment-badge-img">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/201122983570" target="_blank" class="whatsapp-floating-btn" aria-label="Chat with MOLN V Concierge on WhatsApp">
+    <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.822 5.963-1.564c1.713.937 3.682 1.474 5.787 1.474 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+    </svg>
+  </a>
+
+  <!-- Core JavaScript Scripts -->
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/discovery.js"></script>
+  
+  <script>
+    // Populate Featured Products on Homepage
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('homepage-featured-grid');
+      if (grid) {
+        const products = window.molnStore.getProducts();
+        grid.innerHTML = products.map(p => `
+          <div class="product-card">
+            <div class="product-card-media">
+              <span class="badge-tag">${p.badge}</span>
+              ${window.renderWishlistButtonHtml(p.id)}
+              <a href="product.html?id=${p.id}" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                <img src="${p.image}" alt="${p.name}" class="product-card-img" loading="lazy">
+              </a>
+            </div>
+
+            <div class="product-card-body">
+              <div class="product-family-tag">${p.family}</div>
+              <h3 class="product-card-title">
+                <a href="product.html?id=${p.id}">${p.name}</a>
+              </h3>
+              <div class="product-notes-preview">
+                <strong>Accords:</strong> ${p.topNotes}
+              </div>
+
+              <div class="product-card-footer">
+                <div class="product-price-box">
+                  <span class="product-current-price" data-price-sar="${p.priceSAR}">${window.molnStore.formatPrice(p.priceSAR)}</span>
+                  <span class="product-tabby-calc">Or 4x <span data-tabby-sar="${p.priceSAR}">${window.molnStore.getInstallmentPrice(p.priceSAR)}</span> Tabby</span>
+                </div>
+                <button class="card-add-btn" onclick="window.molnStore.addToCart('${p.id}', 1); window.showToast('Added ${p.name} to bag', '✦');">
+                  + Add
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+    });
+  </script>
+
+</body>
+</html>
